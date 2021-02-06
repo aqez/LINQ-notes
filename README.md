@@ -222,7 +222,7 @@ foreach(var person in people)
 bool all30OrUnder = people.All(person => person.Age <= 30);
 
 // Using `Any`
-bool all30OrUnder = people.Any(person => person.Age > 30);
+bool all30OrUnder = !people.Any(person => person.Age > 30);
 ```
 
 
